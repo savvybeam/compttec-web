@@ -1,0 +1,319 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+#top-nav{
+    height: auto;
+    width: 100%;
+    padding: 10px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+}
+
+#top-nav a{
+    color: #fff;
+    text-decoration: none;
+}
+
+#top-nav-ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    width: 220px;
+}
+
+.top-nav-link-items{
+    text-align: center;
+    
+}
+
+.top-nav-link-items a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.top-nav-link-items:hover a{
+    color: #000;
+}
+
+.btn{
+    border-radius: 5px;
+    width: 100px;
+    padding: 5px;
+}
+
+.btn:hover{
+    transition: 100ms ease-in background-color;
+    background-color: orange;
+    border: none;
+}
+
+.shaded-btn{
+    background-color: orange;
+}
+
+.bordered-btn{
+    border: 1px solid orange;
+    color: green
+}
+
+/* hidden control */
+
+.hidden{
+    visibility: hidden;
+    content-visibility: hidden;
+}
+
+/* hidden control ends */
+
+#lower-nav{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    padding: 10px 30px;
+    background-color: #fff;
+    border-bottom: 1px solid rgb(213, 210, 210);
+    z-index: 1000;
+}
+
+#lower-nav-links-ul{
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+    list-style-type: none;
+}
+
+.lower-nav-link-items{
+    position: relative;
+}
+
+.lower-nav-link-items a{
+    text-decoration: none;
+}
+
+.lower-nav-link-items::after{
+    content:"";
+    height: 5px;
+    width: 5px;
+    position: absolute;
+    background-color: orange;
+    top: 20px;
+    left:0;
+}
+
+.lower-nav-link-items:hover::after{
+    transition: 100ms ease-in width;
+    width: 70px;
+}
+
+
+#img-logo{
+    height: 50px;
+    width: 100px;
+}
+
+#body-content{
+    width: 90%;
+    margin: auto;
+}
+
+#page-container{
+    position: relative;
+    background-color: #fff;
+    height: auto;
+}
+
+#hero-section{
+    position: relative;
+    background-image: url(/assets/images/R.jfif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #e6e8eb;
+    height: 600px;
+}
+
+#hero-section::after{
+    position: absolute;
+    content:"";
+    background-color: rgb(62, 61, 59);
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0;
+    opacity: 0.7;
+    z-index: 100;
+}
+
+#cta-msg{
+    position: absolute;
+    top: 70%;
+    left: 70%;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #fff;
+    opacity: 1;
+    width: 400px;
+    z-index: 1009;
+}
+
+#our-services-section{
+    background-color: #fff;
+    height: 600px;
+}
+
+#our-partners-section{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(240, 239, 238);
+    padding: 20px 5px;
+    height: auto;
+}
+
+#our-partners-section .partner-item{
+    border-radius: 10px;
+    width: 20%;
+    height: 60%;
+    background-color: #fff;
+}
+
+#our-partners-section .partner-item img{
+    width: 100%;
+}
+
+#our-partners-section .partner-item-body{
+    background-color: lightgrey;
+    margin-top: 30px;
+    padding: 15px 5px;
+}
+
+#our-partners-section .partner-item-body h5{
+    margin: 15px 0;
+}
+
+#our-partners-section .partner-item-footer{
+    padding: 10px;
+    background-color: #1d1d1b;
+}
+
+#our-partners-section .partner-item-footer a{
+    color: orange
+}
+
+
+
+#our-mailing-list-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    background-color: rgb(9, 240, 20);
+    height: 200px;
+    padding: 0 50px;
+}
+
+#our-mailing-list-section div{
+    width: 50%;
+}
+
+#our-mailing-list-section div input{
+    border-radius: 10px;
+    height: 50px;
+    width: 80%;
+    padding: 10px 50px;
+    font-size: larger;
+}
+
+#our-mailing-list-section div #join-btn{
+    background-color: rgb(9, 240, 20);
+    height: 50px;
+    width: 100px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#our-mailing-list-section div #join-btn:hover{
+    transition: 100ms ease-in background-color;
+    background-color: orange;
+    color: #fff;
+}
+
+#news-section{
+    background-color: #fff;
+    height: 600px;
+}
+
+footer{
+    position: absolute;
+    background-color: #fff;
+    height: 600px;
+    left: 0;
+    width: 100%;
+    bottom: -120px;
+}
+
+#footer-about{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+#footer-about div{
+    width: 50%;
+}
+
+#footer-about div ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+#footer-about div ul li{
+    list-style-type: none;
+}
+
+
+
+#footer-logo{
+    height: 50px;
+    width: 100px;
+}
+
+section{
+    margin-top: 50px;
+    border-bottom: 1px solid rgb(225, 222, 222);
+}
+
+h2{
+    margin-top: 50px;
+    position: relative;
+}
+
+h2::after{
+    position: absolute;
+    content:"";
+    width: 100px;
+    height: 5px;
+    background-color: orange;
+    top: 30px;
+    left: 0;
+}
+
+#copyright{
+    background-color: #000;
+    color: orange;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px;
+}
