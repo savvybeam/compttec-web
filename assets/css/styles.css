@@ -84,9 +84,13 @@ html {
     width: 100%;
     padding: 10px 30px;
     background-color: #fff;
-    border-bottom: 1px solid rgb(213, 210, 210);
     z-index: 1000;
 }
+
+#lower-nav:hover{
+    border-bottom: 2px solid rgb(232, 196, 129);
+}
+
 
 #lower-nav-links-ul{
     display: flex;
@@ -160,7 +164,7 @@ html {
 #cta-msg{
     position: absolute;
     top: 70%;
-    left: 70%;
+    left: 60%;
     padding: 20px;
     border-radius: 5px;
     background-color: #fff;
@@ -262,11 +266,11 @@ html {
 
 footer{
     position: absolute;
-    background-color: #fff;
+    background-color: rgb(232, 196, 129);
     height: 600px;
     left: 0;
     width: 100%;
-    bottom: -120px;
+    bottom: 0;
 }
 
 #footer-about{
@@ -316,11 +320,13 @@ h2::after{
 }
 
 #copyright{
+    position: absolute;
     background-color: #000;
     color: orange;
     display: flex;
     justify-content: space-between;
     padding: 10px 30px;
+<<<<<<< HEAD
 }
 
 #jump-up{
@@ -336,4 +342,8 @@ h2::after{
 #jump-up a{
     text-decoration: none;
     color: orange;
+=======
+    bottom: 0;
+    width: 100%;
+>>>>>>> e1972305369a00659056c9f7d99e395d83dc6fb2
 }
