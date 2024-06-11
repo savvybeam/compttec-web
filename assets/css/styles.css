@@ -179,27 +179,31 @@ html {
 }
 
 #our-partners-section{
+    position: relative;
     display: flex;
     justify-content: space-evenly;
     background-color: rgb(240, 239, 238);
     padding: 20px 5px;
-    height: auto;
+    height: 600px;
 }
 
 #our-partners-section .partner-item{
+    position: relative;
     border-radius: 10px;
     width: 20%;
-    height: 60%;
+    height: auto;
     background-color: #fff;
 }
 
 #our-partners-section .partner-item img{
     width: 100%;
+    height: 30%;
 }
 
 #our-partners-section .partner-item-body{
     background-color: lightgrey;
     margin-top: 30px;
+    height: 50%;
     padding: 15px 5px;
 }
 
@@ -210,6 +214,7 @@ html {
 #our-partners-section .partner-item-footer{
     padding: 10px;
     background-color: #1d1d1b;
+    height: 10%;
 }
 
 #our-partners-section .partner-item-footer a{
@@ -321,6 +326,24 @@ h2::after{
     display: flex;
     justify-content: space-between;
     padding: 10px 30px;
+<<<<<<< HEAD
+}
+
+#jump-up{
+    border-radius: 50%;
+    background-color: black;
+    position: absolute;
+    padding: 10px;
+    bottom: 0;
+    left: 90%;
+    cursor: pointer;
+}
+
+#jump-up a{
+    text-decoration: none;
+    color: orange;
+=======
     bottom: 0;
     width: 100%;
+>>>>>>> e1972305369a00659056c9f7d99e395d83dc6fb2
 }
