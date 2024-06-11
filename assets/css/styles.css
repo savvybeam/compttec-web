@@ -176,6 +176,20 @@ html {
 #our-services-section{
     background-color: #fff;
     height: 600px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#our-services-section .services-item{
+    background-color: orange;
+    height: 300px ;
+    width: 300px;
+    padding: 30px;
+}
+
+#our-services-section .services-item .services-item-body p{
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
 
 #our-partners-section{
@@ -326,7 +340,8 @@ h2::after{
     display: flex;
     justify-content: space-between;
     padding: 10px 30px;
-<<<<<<< HEAD
+    bottom: 0;
+    width: 100%;
 }
 
 #jump-up{
@@ -334,7 +349,7 @@ h2::after{
     background-color: black;
     position: absolute;
     padding: 10px;
-    bottom: 0;
+    bottom: 80px;
     left: 90%;
     cursor: pointer;
 }
@@ -342,8 +357,4 @@ h2::after{
 #jump-up a{
     text-decoration: none;
     color: orange;
-=======
-    bottom: 0;
-    width: 100%;
->>>>>>> e1972305369a00659056c9f7d99e395d83dc6fb2
 }
