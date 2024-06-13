@@ -175,7 +175,7 @@ html {
 
 #our-services-section{
     background-color: #fff;
-    height: 600px;
+    height: auto;
     display: flex;
     justify-content: space-between;
 }
@@ -185,6 +185,7 @@ html {
     height: 300px ;
     width: 300px;
     padding: 30px;
+    border-radius: 20px;
 }
 
 #our-services-section .services-item .services-item-body p{
@@ -348,6 +349,7 @@ footer{
 section{
     margin-top: 50px;
     border-bottom: 1px solid rgb(225, 222, 222);
+    padding-bottom: 40px;
 }
 
 h2{
